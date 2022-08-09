@@ -37,7 +37,7 @@ while DAY<END:
     page=1 #새 날짜로 리셋될 때마다 초기화 필요
     #stop=1 #마지막 페이지에서 멈춰주는 용도
     URL='https://m.search.daum.net/search?w=news&DA=PGD&enc=utf8&cluster=y&cluster_page=1&q='+str(KEYWORD)+'&period=u&sd='+str(DAY.strftime("%Y%m%d%H%M%S"))+'&ed='+str((DAY+relativedelta(months=1)-timedelta(days=1)).strftime("%Y%m%d%H%M%S"))+'&p='
-    headers = {'User-Agent': useragent.random,
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36',
                'cache-control': 'private, no-cache, max-age=0',
                 'content-encoding': 'br',
                 'content-type': 'text/html; charset=utf-8',
