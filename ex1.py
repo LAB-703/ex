@@ -12,8 +12,6 @@ import numpy as np
 import urllib.request
 from urllib import parse
 import requests
-from fake_useragent import UserAgent
-useragent = UserAgent()
 from bs4 import BeautifulSoup as bs
 import json
 import pandas as pd
