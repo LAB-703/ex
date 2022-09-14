@@ -38,9 +38,9 @@ end_d = st.sidebar.date_input(
      "Search Date")
 st.sidebar.write('Search Date end :', end_d)
 
-naver_news= st.sidebar.checkbox(naver_news)
+naver_news= st.sidebar.checkbox("naver_news")
 if naver_news==True:
-     st.sidebar.write(naver_news)
+     st.sidebar.write("naver_news")
 
 accounts = [START,END]
 account_selections = st.sidebar.multiselect(
