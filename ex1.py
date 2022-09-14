@@ -30,13 +30,18 @@ END=datetime(2022,5,9)   #마지막달 다음달 1일
 
 st.sidebar.subheader("Filter Displayed Accounts")
 
-accounts = list(START,END)
+d = st.date_input(
+     "When's your birthday",
+     datetime.date(2019, 7, 6))
+st.write('Your birthday is:', d)
+
+accounts = [START,END]
 account_selections = st.sidebar.multiselect(
     "Select Accounts to View", options=accounts, default=accounts
 )
 st.sidebar.subheader("Filter Displayed Tickers")
 
-symbols = list(START,END)
+symbols =[START,END]
 symbol_selections = st.sidebar.multiselect(
     "Select Ticker Symbols to View", options=symbols, default=symbols
 )
