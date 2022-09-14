@@ -31,9 +31,13 @@ END=datetime(2022,5,9)   #마지막달 다음달 1일
 st.sidebar.subheader("Filter Displayed Accounts")
 
 d = st.date_input(
-     "When's your birthday",
-     datetime.date(2019, 7, 6))
+     "When's your birthday")
 st.write('Your birthday is:', d)
+
+agree = st.checkbox('I agree')
+
+if agree:
+     st.write('Great!')
 
 accounts = [START,END]
 account_selections = st.sidebar.multiselect(
