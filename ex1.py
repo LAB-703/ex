@@ -38,9 +38,9 @@ end_d = st.sidebar.date_input(
      "Search Date")
 st.sidebar.write('Search Date end :', end_d)
 
-def platform(platform):
-      platform= st.sidebar.checkbox(platform)
-     if platform==True:
+def platform(p):
+      p= st.sidebar.checkbox(p)
+     if p==True:
           st.sidebar.write(platform)
 
 platform(naver_news)          
