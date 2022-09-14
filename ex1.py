@@ -41,5 +41,4 @@ symbols = list(START,END)
 symbol_selections = st.sidebar.multiselect(
     "Select Ticker Symbols to View", options=symbols, default=symbols
 )
-
-  st.subheader("Selected Account and Ticker Data")
+st.subheader("Selected Account and Ticker Data")
