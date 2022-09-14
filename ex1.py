@@ -11,7 +11,6 @@ import numpy as np
 import urllib.request
 from urllib import parse
 import requests
-from bs4 import BeautifulSoup as bs
 import json
 import pandas as pd
 import warnings
